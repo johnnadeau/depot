@@ -55,9 +55,11 @@ class CartsController < ApplicationController
   # DELETE /carts/1
   # DELETE /carts/1.json
   def destroy
-    @cart.destroy
+    @cart.destroy if @cart.id == session[:cart_id]
+    session[:cart_id] = nil
     respond_to do |format|
-      format.html { redirect_to carts_url }
+      format.html { redirect_to store_url,
+        notice: 'Your cart is currently empty' }
       format.json { head :no_content }
     end
   end
@@ -74,7 +76,7 @@ class CartsController < ApplicationController
   end
 
   def invalid_cart
-    logger.error "Attempt to access invalid cart #{params[:id]}"
+    logger.error "Attempt to access invalid cart #{ params[:id] }"
     redirect_to store_url, notice: 'Invalid cart'
   end
 end
