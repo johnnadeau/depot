@@ -8,8 +8,8 @@ a full book like this and see how things *should* be done.
 
 ###I have a few things left to do to consider myself finished with the book:
 
-- Chapter 15 Internationalization *where I was in my Rails adventures didn't require me to worry about
-internationalization yet,* **but I'm sure that day will come**
+- Chapter 15 Internationalization -- *Where I was in my Rails adventures didn't require me to worry about
+internationalization yet,* **but I'm sure that day will come.**
 - *Playtime* enhancements (other than those required later in the book)
-- Chapter 16 Deployment *I'm currently using Heroku, but I'm exploring hosting on my "own" servers soon enough*
+- Chapter 16 Deployment -- *I'm currently using Heroku, but I'm exploring hosting on my "own" servers soon enough.*
 - A more in depth look at chapters 19-25 
